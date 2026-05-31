@@ -1,0 +1,8 @@
+server:
+  port: 8091
+
+spring:
+  application:
+    name: hello-app
+  config:
+    import: configserver:http://localhost:8090
