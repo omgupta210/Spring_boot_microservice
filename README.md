@@ -53,23 +53,19 @@ GET http://localhost:8090/hello-app/default
 
 ## Deploy to Git (GitHub: omgupta210)
 
-1. Install Git: https://git-scm.com/download/win
-2. Create repo: https://github.com/new → name **`spring-server-code`** (no README)
-3. Run:
+Repo name: **`config_server_code`**
+
+**One command (login + create repo + push):**
 ```bat
-cd D:\spring_server_code
-deploy-to-git.bat
+push-to-github.bat
 ```
 
-Or manually:
-```bat
-cd D:\spring_server_code
-git init
-git add .
-git commit -m "Initial commit: Hello World + Config Server"
-git branch -M main
-git remote add origin https://github.com/omgupta210/spring-server-code.git
-git push -u origin main
-```
+This opens GitHub login in browser, then creates:
+https://github.com/omgupta210/config_server_code
 
-Repo URL: https://github.com/omgupta210/spring-server-code
+**Manual steps:**
+1. `gh auth login`
+2. `push-to-github.bat` or:
+```bat
+gh repo create omgupta210/config_server_code --public --source=. --remote=origin --push
+```
