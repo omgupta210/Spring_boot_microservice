@@ -51,21 +51,6 @@ Verify config:
 GET http://localhost:8090/hello-app/default
 ```
 
-## Deploy to Git (GitHub: omgupta210)
+## GitHub
 
-Repo name: **`config_server_code`**
-
-**One command (login + create repo + push):**
-```bat
-push-to-github.bat
-```
-
-This opens GitHub login in browser, then creates:
-https://github.com/omgupta210/config_server_code
-
-**Manual steps:**
-1. `gh auth login`
-2. `push-to-github.bat` or:
-```bat
-gh repo create omgupta210/config_server_code --public --source=. --remote=origin --push
-```
+Repo: https://github.com/omgupta210/Spring_boot_microservice
